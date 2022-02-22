@@ -1,0 +1,71 @@
+{
+    "name": "ChannelBot",
+    "description": "Bot telegram untuk ngirim file ke channel",
+    "keywords": [
+        "telegram",
+        "channel",
+        "bot"
+    ],
+    "repository": "https://github.com/",
+    "website": "https://github.com/",
+    "success_url": "https://github.com/",
+    "env": {
+        "API_ID": {
+            "description": "Dapatkan dari my.telegram.org atau @TeleORG_Bot",
+            "value": "" 
+        },
+        "API_HASH": {
+            "description": "Dapatkan dari my.telegram.org atau @TeleORG_Bot",
+            "value": ""
+        },
+        "FORCESUB_CHANNEL": {
+            "description": "The Channel ID which will be used as Database. Example: -100123456789",
+            "value": ""
+        },
+        "DB_CHANNEL": {
+            "description": "Bot Owner UserID",
+            "value": ""
+        },
+        "BOT_TOKEN": {
+            "description": "Buat bot di @BotFather dan dapatkan tokennya.",
+            "value": ""
+        },
+        "LOG_CHANNEL": {
+            "description": "Tempat nyetor logs, buat channel baru dan kirim sebuah pesan dan teruskan (forward) pesan tersebut ke @missrose_bot dan balas (reply) pesan yang telah di teruskan (forward) dengan perintah (command) /id dan dapatkan idnya yang biasanya dimulai dari -100",
+            "value": ""
+        },
+        "CHANNEL_1": {
+            "description": "Channel pertama, Teruskan (forward) salah satu pesan yang ada di channel pertama anda tersebut ke @missrose_bot dan balas (reply) pesan yang telah di teruskan (forward) dengan perintah (command) /id dan dapatkan idnya yang biasanya dimulai dari -100",
+            "value": ""
+        },
+        "CHANNEL_2": {
+            "description": "Channel kedua, Teruskan (forward) salah satu pesan yang ada di channel pertama anda tersebut ke @missrose_bot dan balas (reply) pesan yang telah di teruskan (forward) dengan perintah (command) /id dan dapatkan idnya yang biasanya dimulai dari -100",
+            "value": "",
+            "required": false
+        },
+        "CHANNEL_3": {
+            "description": "Channel ketiga, Teruskan (forward) salah satu pesan yang ada di channel pertama anda tersebut ke @missrose_bot dan balas (reply) pesan yang telah di teruskan (forward) dengan perintah (command) /id dan dapatkan idnya yang biasanya dimulai dari -100",
+            "value": "",
+            "required": false
+        },
+        "OWNER_ID": {
+            "description": "ID Telegram anda, pergi ke @missrose_bot dan ketik /id dan copy id anda disini. (bukan username)",
+            "value": "1884429569"
+        },
+        "MONGO_DB_URI": {
+            "description": "Tonton https://youtu.be/0aYrJTfYBHU dan salin urlnya disini",
+            "value": "mongodb+srv://MantapFileMediaDB:Mantapjozzsaver.@cluster0.2p7ca.mongodb.net/MantapFileMediaDB?retryWrites=true&w=majority"
+        }
+    },
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        }
+    ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    }
+}

@@ -1,0 +1,6 @@
+Pyrogram
+TgCrypto
+motor
+dnspython
+https://github.com/Tinche/aiofiles/archive/master.zip
+python-dotenv
